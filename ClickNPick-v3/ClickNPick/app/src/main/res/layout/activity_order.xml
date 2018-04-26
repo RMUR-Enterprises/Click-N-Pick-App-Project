@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/acceptBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickAccept"
+                android:text="@string/accept" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/rejectBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickReject"
+                android:text="@string/reject" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCancel"
+                android:text="@string/cancel"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/reOrderBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickReOrder"
+                android:text="Re-Order"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/idText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_id_d"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pickupTimeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pickup_time_s"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status_s"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/reasonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_s"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/userIdText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_id_d"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/items"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/itemsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

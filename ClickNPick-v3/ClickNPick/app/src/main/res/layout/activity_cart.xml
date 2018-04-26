@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <ListView
+        android:id="@+id/cartItemsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/changeTimeBtn"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/pickupTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/changeTimeBtn"
+        android:layout_alignTop="@+id/changeTimeBtn"
+        android:layout_toLeftOf="@+id/changeTimeBtn"
+        android:layout_toStartOf="@+id/changeTimeBtn"
+        android:gravity="center_vertical"
+        android:text="@string/pickup_time_s"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/changeTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkoutBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickChangeTime"
+        android:text="@string/change" />
+
+    <TextView
+        android:id="@+id/totalPriceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkoutBtn"
+        android:layout_alignTop="@+id/checkoutBtn"
+        android:layout_toLeftOf="@+id/checkoutBtn"
+        android:layout_toStartOf="@+id/checkoutBtn"
+        android:gravity="center_vertical"
+        android:text="@string/total_price_d"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/checkoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickCheckout"
+        android:text="@string/checkout" />
+
+</RelativeLayout>
